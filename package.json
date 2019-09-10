@@ -1,0 +1,34 @@
+{
+  "name": "SvandisToken",
+  "version": "1.0.1-c",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test-storage": "truffle test ./test/tokenstorage.test.js",
+    "test-proxy": "truffle test ./test/tokenproxy.test.js",
+    "test-ownable": "truffle test ./test/Ownable.test.js",
+    "test-pausable": "truffle test ./test/Pausable.test.js",
+    "test-lockable": "truffle test ./test/Lockable.test.js",
+    "test-upgradeability": "truffle test ./test/DelayedUpgradeabilityProxy.test.js",
+    "test-proxy-delayed": "truffle test ./test/tokenproxy-delayed.test.js",
+    "test-all": "truffle test",
+    "testrpc": "testrpc"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "chai-bignumber": "^2.0.2",
+    "dotenv": "^6.0.0",
+    "eth-gas-reporter": "^0.2.3",
+    "openzeppelin-solidity": "^1.12.0",
+    "testrpc": "0.0.1",
+    "truffle": "^5.0.26",
+    "truffle-contract": "^3.0.6",
+    "truffle-hdwallet-provider": "1.0.8",
+    "zos-lib": "^1.3.0"
+  }
+}
